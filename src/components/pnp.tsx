@@ -5,46 +5,52 @@ import { GoMarkGithub } from "react-icons/go";
 
 const ProjectsAndCurriculumComponent = () => {
   return(
-    <>
-      <div className="absolute bottom-0 h-2/6 bg-purple-300 min-w-full clip-path-polygon-[0_0,_100%_0,_100%_100%,_0%_100%] grid grid-cols-2 divide-x">
-
-        <div className="relative bg-green-300 border-r border-black skew-x-6 -left-5 z-30 flex flex-row">
-          <div className='relative -left-4 -top-12 -skew-x-6 overflow-hidden '>
-            <Image  src={mealMatchImg} alt="mealmatch" width={320} height={320} className='inline-block' />
-          </div> 
-          <div className='flex flex-col -skew-x-6 gap-2 w-2/3 m-5 ml-0'>
-              <p className="text-2xl font-semibold text-black">Meal Match</p>
-              <p className='text-black'>O Meal Match usa a API da Spoonacular para  buscar por receitas baseado nos
-                                          ingredientes que você listar. <br/>
-                                          Encontre receitas com os ingredientes que você já tem em casa com Meal Match!
-                                          </p>
-              <div className='flex flex-row mt-5'>
-                <GoMarkGithub className="h-10 w-10 m-5 fill-black"/>
-                <button className='p-2 border border-black rounded-lg'>Ir para app</button>
-              </div>
+    <div className='fixed bottom-0 flex flex-col max-[768px]:h-[50vh] gap-7'>
+          <div className="max-[425px]:mx-auto h-[10%] ml-5">
+            <h1 className="text-5xl text-white font-bold">Projetos</h1>
           </div>
+      <div className='h-[90%] w-screen'>
+        <div className="bg-green-300 flex h-[50%] ">
+            <div className="min-[769px]:clip-path-polygon-[0_0,_100%_0,_95%_100%,_0_100%]">
+              <div className='relative max-[768px]:hidden w-60 min-[769px]:w-56'>
+                <Image  src={mealMatchImg} alt="mealmatch" fill className='inline-block object-contain' />
+              </div>
+              
+              <div className=''>
+                  <h1 className="text-2xl font-semibold text-black text-center">Meal Match</h1>
+                  <p className='text-black'>O Meal Match usa a API da Spoonacular para  buscar por receitas baseado nos
+                                              ingredientes que você listar. <br/>
+                                              Encontre receitas com os ingredientes que você já tem em casa com Meal Match!
+                                              </p>
+                  <div className='flex'>
+                    <GoMarkGithub className="h-10 w-10 fill-black"/>
+                    <button className='p-2 border border-black rounded-lg'>Ir para app</button>
+                  </div>
+              </div>
+            </div>
         </div>
 
-        <div className='flex flex-row border border-purple-300'>
+          <div className='flex bg-purple-300 h-[50%]'>
 
-        <div className='relative -left-20 -top-12 overflow-hidden'>
-        <Image  src={noteAppImg} alt="noteapp" width={300} height={300} className='inline-block'></Image>
-        </div>
-        <div className='relative right-16 flex flex-col gap-2 w-2/3 m-5 ml-0'>
-              <p className="text-2xl font-semibold text-black">Note App</p>
-              <p className='text-black'>Aplicativo de Notas desenvolvido em Next.js usando a T3 Stack.<br/>
-                                          Você consegue criar e modificar notas e salvá-las na nuvem!
-                                          </p>
-              <div className='flex flex-row mt-10'>
-                <GoMarkGithub className="h-10 w-10 m-5 fill-black"/>
-                <button className='p-2 border border-black rounded-lg'>Ir para app</button>
+            <div className='relative w-60 max-[768px]:hidden min-[769px]:w-56'>
+              <Image  src={noteAppImg} alt="noteapp" fill className='inline-block object-contain' />
+            </div>
+            <div className=' flex flex-col'>
+                  <h1 className="text-2xl font-semibold text-black text-center">Note App</h1>
+                  <p className='text-black'>Aplicativo de Notas desenvolvido em Next.js usando a T3 Stack.<br/>
+                                              Você consegue criar e modificar notas e salvá-las na nuvem!
+                                              </p>
+                  <div className='flex'>
+                    <GoMarkGithub className="h-10 w-10  fill-black"/>
+                    <button className='p-2 border border-black rounded-lg'>Ir para app</button>
+                  </div>
               </div>
+            
+            </div>
           </div>
+
         
-        </div>
-
-      </div>
-    </>
+    </div>
   )
 }
 
