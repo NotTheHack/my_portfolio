@@ -13,7 +13,7 @@ const Home: NextPage = () => {
       </Head>
       <main className="relative min-h-screen ">
 
-        <div className="flex flex-col inset-x-0 top-0 z-50 m-auto pt-10">
+        <div className="flex flex-col inset-x-0 top-0 z-50 m-auto pt-10 max-[820px]:pt-4">
 
         <CardPage/>         
         <ProjectsAndCurriculumComponent />
