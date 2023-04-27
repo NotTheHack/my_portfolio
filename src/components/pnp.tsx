@@ -2,6 +2,7 @@ import Image from 'next/image'
 import mealMatchImg from '../../public/Meal Match.png'
 import noteAppImg from '../../public/Noteapp.png'
 import { GoMarkGithub } from "react-icons/go";
+import Link from 'next/link';
 
 const ProjectsAndCurriculumComponent = () => {
   return(
@@ -24,8 +25,8 @@ const ProjectsAndCurriculumComponent = () => {
                                               Encontre receitas com os ingredientes que você já tem em casa com Meal Match!
                                               </p>
                   <div className='flex w-[250px] justify-between items-center max-[375px]:w-[250px]'>
-                    <GoMarkGithub className="h-12 w-12 fill-black cursor-pointer"/>
-                    <button className='p-2 w-32 h-[52px] border border-black rounded-lg hover:bg-black hover:text-white active:bg-transparent active:text-black transition-all'>Ir para app</button>
+                    <Link href={"https://github.com/NotTheHack/Meal-Match"}><GoMarkGithub className="h-12 w-12 fill-black cursor-pointer"/></Link>
+                    <Link href={"https://meal-match-one.vercel.app/"}><button className='p-2 w-32 h-[52px] border border-black rounded-lg hover:bg-black hover:text-white active:bg-transparent active:text-black transition-all'>Ir para app</button></Link>
                   </div>
               </div>
         </div>
@@ -40,8 +41,8 @@ const ProjectsAndCurriculumComponent = () => {
                                           Você consegue criar e modificar notas e salvá-las na nuvem!
                                           </p>
               <div className='flex w-[250px] justify-between items-center max-[375px]:w-[250px]'>
-                <GoMarkGithub className="h-12 w-12  fill-black cursor-pointer"/>
-                <button className='p-2 w-32 h-[52px] border border-black rounded-lg hover:bg-black hover:text-white active:bg-transparent active:text-black transition-all'>Ir para app</button>
+                <Link href={"https://github.com/NotTheHack/T3-note-app"}><GoMarkGithub className="h-12 w-12  fill-black cursor-pointer"/></Link>
+                <Link href={"https://t3-note-app-sigma.vercel.app/"}><button className='p-2 w-32 h-[52px] border border-black rounded-lg hover:bg-black hover:text-white active:bg-transparent active:text-black transition-all'>Ir para app</button></Link>
               </div>
             </div>
           </div>
