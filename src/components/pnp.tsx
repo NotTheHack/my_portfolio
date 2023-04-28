@@ -8,7 +8,7 @@ const ProjectsAndCurriculumComponent = () => {
   return(
     <div className='fixed bottom-0 flex flex-col max-[820px]:h-[60vh] gap-8 h-80'>
       <div className="max-[425px]:mx-auto h-[10%] ml-5">
-        <h1 className="text-5xl text-white font-bold">Projetos</h1>
+        <h1 className="text-5xl text-white font-bold max-[375px]:hidden">Projetos</h1>
       </div>
 
       <div className='flex flex-col min-[1000px]:flex-row h-[90%] w-screen'>
